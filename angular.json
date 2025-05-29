@@ -24,12 +24,17 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+                "src/assets"
+
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
             ],
-            "scripts": []
+            "scripts": [  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
           },
           "configurations": {
             "production": {
@@ -80,8 +85,10 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
+                
                 "glob": "**/*",
                 "input": "public"
+
               }
             ],
             "styles": [
@@ -92,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ae5e54a1-cadb-4c65-bd26-10ef144e7769"
   }
 }
